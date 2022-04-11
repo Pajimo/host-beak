@@ -1,5 +1,7 @@
 import { useState } from "react"
 import Image2 from '../../assets/image2.png'
+import { Outlet, Link } from "react-router-dom";
+import AddBill from "../addBill";
 
 const SignUp = () => {
 
@@ -72,7 +74,8 @@ const SignUp = () => {
                                 
                             </div>
                             <div>
-                                <button className="py-5 text-white bg-[#3DB0FF] w-full rounded-lg text-[30px] font-semibold ">Sign Up</button>
+                            
+                            <Link to="../addBill"><button className="py-5 text-white bg-[#3DB0FF] w-full rounded-lg text-[30px] font-semibold ">Sign Up</button></Link>
                             </div>
                             <div>
                                 <p className="text-[21px] flex justify-center mt-5 text-[400]">Got an Account? <a href="" className="text-[#3DB0FF] ml-3"> Sign In</a></p>

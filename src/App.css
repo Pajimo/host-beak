@@ -1,3 +1,26 @@
 input{
   outline:none
 }
+
+details summary {
+  display: block;
+  cursor: pointer;
+  color: #C4C4C4;
+}
+
+details[open] summary img {
+  background: #081494;
+}
+
+details[open] summary {
+  color: #000000;
+}
+
+details{
+  color: #C4C4C4;
+  overflow: hidden;
+}
+
+details div p:active{
+  color: #081494;
+}
