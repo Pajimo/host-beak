@@ -88,7 +88,7 @@ const SignUp = () => {
                             </div>
                             <div>
                             
-                            <button className="py-5 text-white bg-[#3DB0FF] w-full rounded-lg text-[25px] font-semibold "><Link to='addbill'>Sign Up</Link></button>
+                            <button className="py-5 text-white bg-[#3DB0FF] w-full rounded-lg text-[25px] font-semibold "><Link to='../addbill'>Sign Up</Link></button>
                             </div>
                             <div>
                                 <p className="text-[18px] flex justify-center mt-5 text-[400]">Got an Account? <a href="" className="text-[#3DB0FF] ml-3 mb-10 md:mb-0"> Sign In</a></p>
