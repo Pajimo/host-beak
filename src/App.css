@@ -24,3 +24,25 @@ details{
 details div p:active{
   color: #081494;
 }
+
+
+
+@media only screen and (max-width: 650px) {
+  .profile-corner{
+      visibility: hidden;
+  }
+  .mainColumn{
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .profile-corner2{
+      visibility: hidden;
+  }
+  .profile-Show-button{
+    visibility: hidden;
+  }
+
+}

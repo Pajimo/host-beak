@@ -13,6 +13,8 @@ import purchasesLogo from '../assets/purchasesLogo.png'
 import reportLogo from '../assets/reportLogo.png'
 import salesLogo from '../assets/salesLogo.png'
 import settingsLogo from '../assets/settingsLogo.png'
+import notificationLogo from '../assets/notificationLogo.png'
+import paymentLogo from '../assets/paymentsLogo.png'
 
 
 import { Outlet, Link } from "react-router-dom";
@@ -20,11 +22,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddBill from './addBill'
 import ViewReport from './viewReports'
 
-const MainColumn = () => {
+const MainColumn = ({setAddBill, setViewReport}) => {
+
+
+    const viewReportFunc = () =>{
+        setViewReport(true)
+        setAddBill(false)
+    }
+
     return(
         <>
             <div className=''>
-                <div className='w-80 bg-[#F9F9F9] text-[18px] pt-10'>
+                <div className='md:w-80 h-full w-full bg-[#F9F9F9] text-[18px] pt-10'>
+                    <div className='flex items-center justify-center profile-corner2'>
+                        <div className=' border-2 border-[#E9E9E9] rounded-full mr-5 p-3'><img src={notificationLogo} alt='notification Logo' className='' /></div>
+                        <div className='w-[54px] h-[54px] rounded-full bg-[#091E46] mr-5'></div>
+                        <p className='text-[#091E46] mr-5'>Olamide</p>
+                        <img src={arrowDown} alt='arrow down'/>
+                    </div>
                     <details className='pl-16 py-7 '>
                         <summary className='flex text-[#C4C4C4] items-center pr-5 justify-between'><img src={welcomeLogo} alt='welcome Logo' className='mr-10 p-2 w-12 h-12 rounded-full object-contain'/> Welcome  <div className='ml-10'></div></summary>
                     </details>
@@ -57,7 +72,7 @@ const MainColumn = () => {
                     <details className='pl-16 py-7 '>
                         <summary className='flex items-center text-[#C4C4C4]  pr-5 justify-between'><img src={analyticsLogo} alt='analytic logo' className='mr-10 p-2 w-12 h-12 rounded-full  active:bg-[#081494]'/> Analytics  <img src={arrowLogo} alt='arrowLogo' className='ml-10' /></summary>
                         <div className='pl-24'>
-                            <p>View Report</p>
+                            <Link to='/viewReport'><p>View Report</p></Link>
                             <p>To-Do</p>
                             <p>Upload Docs</p>
                             <p>Chat</p>
@@ -73,8 +88,8 @@ const MainColumn = () => {
                     <div className='pl-16 py-7 border-b-2'>
                         <p className='flex justify-between'><img src={logoutLogo} />Logout <div className='ml-10'></div></p>
                     </div>
-                    <div>
-                        <p>Accept Payments</p>
+                    <div className='flex justify-center mt-10 md:pb-10'>
+                        <p className='p-3 text-white bg-blue-600 rounded-xl flex justify-between items-center text-2xl'><img src={paymentLogo} className=' pr-5'/>Accept Payments</p>
                     </div>
                 </div>
 
