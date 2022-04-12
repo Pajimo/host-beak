@@ -24,8 +24,10 @@ const AddBill = ({setAddBill}) => {
 
     return(
         <>
-            <Header />
-            <button className="profile-Show-button bg-[#F9F9F9] w-full flex justify-end pr-10" onClick={menuFunction}><AiOutlineMenu className="text-2xl"/></button>
+            <div className="bg-[#F9F9F9]">
+                <Header />
+                <button className="profile-Show-button bg-[#F9F9F9] w-full flex justify-end pr-10" onClick={ menuFunction}><AiOutlineMenu className="text-2xl"/></button>
+            </div>
             <div className="flex relative">
                 { <div className="absolute md:relative inset-0 mainColumn" ref={menu}><MainColumn viewReport={viewReport} setViewReport={setViewReport} setAddBill={setAddBill}/> </div>}
                 <div className="md:py-20 py-5 px-5 md:px-10 w-full">
