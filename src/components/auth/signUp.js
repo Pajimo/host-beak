@@ -51,7 +51,7 @@ const SignUp = () => {
                         <p className="text-[20px] text-[#282C40] font-[300]">Build an exceptional business</p>
                     </div>
                     <div className="md:w-9/12">
-                        <form className="font-semibold text-[#82869A]">
+                        <form className="font-semibold text-[#82869A]" onSubmit={(e) => e.preventDefault()}>
                             <div className="flex md:flex-row flex-col justify-between mb-5">
                                 <div className="md:basis-1/2 mr-5">
                                     <label id="firstName" htmlFor="firstName" className="mb-2 text-lg">First Name</label><br></br>
