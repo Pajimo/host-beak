@@ -36,7 +36,7 @@ const ViewReport = () => {
                                     <div className="">
                                         <div className="lg:flex items-center justify-between py-5 border-2 px-10 text-lg">
                                             <div className="flex flex-row sm:justify-between items-center md:mb-0 mb-5">
-                                                <div className="md:mr-0 mr-5">
+                                                <div className="md:mr-0 mr-5 pr-5">
                                                     <input type='checkbox' />
                                                 </div>
                                                 <div>
